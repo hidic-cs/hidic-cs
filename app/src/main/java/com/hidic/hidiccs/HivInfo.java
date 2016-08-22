@@ -11,6 +11,7 @@ import java.util.List;
 
 public class HivInfo extends AppCompatActivity {
 
+    // This is a list view
     ListView listView;
     String[] listItems = {"Prevention", "Manage HIV", "Advice", "Doctor", "Hospital",
             "Treatment"};
