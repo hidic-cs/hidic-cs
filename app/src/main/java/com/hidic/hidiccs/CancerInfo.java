@@ -14,7 +14,7 @@ public class CancerInfo extends AppCompatActivity {
     }
     public void view (View v)
     {
-        Intent x = new Intent(this, MapsActivity.class);
+        Intent x = new Intent(this, CancerMapActivity.class);
         startActivity(x);
     }
 }
