@@ -1,7 +1,9 @@
 package com.hidic.hidiccs;
-
+//goestomainactivity3
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -29,5 +31,10 @@ public class DiabetesInfo extends AppCompatActivity {
                 R.id.list_item_title,
                 list);
         listView.setAdapter(arrayAdapter);
+    }
+    public void view (View v)
+    {
+        Intent x = new Intent(this, Main3Activity.class);
+        startActivity(x);
     }
 }
