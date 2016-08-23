@@ -8,7 +8,7 @@ public class ConfigUrl {
     // Default config for real devices
     private static String baseUrl =
             // ip of your machine
-            "http://192.168.100.5/";
+            "http://192.168.5.24/";
 
     // Server patient login url
     public static String URL_LOGIN = baseUrl + "hidic_cs/";
