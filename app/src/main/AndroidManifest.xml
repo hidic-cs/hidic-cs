@@ -59,13 +59,13 @@
             android:value="AIzaSyAhdEFDPnhVEvmF0wEkN8ZkWQUData9REg" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".CancerMapActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".Main2Activity"
+            android:name=".HIVMapActivity"
             android:label="@string/title_activity_main2" />
         <activity
-            android:name=".Main3Activity"
+            android:name=".DiabetesMapActivity"
             android:label="@string/title_activity_main3" />
     </application>
 

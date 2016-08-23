@@ -1,5 +1,5 @@
 package com.hidic.hidiccs;
-//cancermap1
+//diabetesmap3
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -24,10 +24,10 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback ,
+public class DiabetesMapActivity extends FragmentActivity implements OnMapReadyCallback,
 
-    GoogleApiClient.ConnectionCallbacks,
-    GoogleApiClient.OnConnectionFailedListener,
+        GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener,
         com.google.android.gms.location.LocationListener {
 
 
@@ -41,7 +41,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+        setContentView(R.layout.activity_diabetesmap);
 
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             checkLocationPermission();
@@ -133,9 +133,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng akuh = new LatLng(-1.300871,36.808372);
         mMap.addMarker(new MarkerOptions().position(akuh).title("Aga Khan University Hospital"));
 
-        LatLng ngongave = new LatLng(-1.30514,36.8327);
-        mMap.addMarker(new MarkerOptions().position(ngongave).title("Beacon Health Services Cancer Treatment Center"));
-
         LatLng cpgh = new LatLng(-4.048819,39.67421);
         mMap.addMarker(new MarkerOptions().position(cpgh).title("Coast Province General Hospital"));
 
@@ -148,20 +145,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng mtarh = new LatLng(0.511831,35.280466);
         mMap.addMarker(new MarkerOptions().position(mtarh).title("Moi Teaching and Referral Hospital"));
 
-        LatLng mpsh = new LatLng(-1.263719,36.812086);
-        mMap.addMarker(new MarkerOptions().position(mpsh).title("M.P. Shah Hospital/Cancer Care Kenya"));
-
         LatLng thnahop = new LatLng(-1.2954504,36.805132);
         mMap.addMarker(new MarkerOptions().position(thnahop).title("The Nairobi Hospital"));
 
-        LatLng temiho = new LatLng(-0.74377,35.359806);
-        mMap.addMarker(new MarkerOptions().position(temiho).title("Tenwek Mission Hospital"));
-
-        LatLng tecacen = new LatLng(-1.2931162023973977,36.82070321855463);
-        mMap.addMarker(new MarkerOptions().position(tecacen).title("Texas Cancer Centre"));
-
-        LatLng caacok = new LatLng(-1.2994875,36.8158967);
-        mMap.addMarker(new MarkerOptions().position(caacok).title("Cancer Awareness Centre Of Kenya"));
 
         //move map camera
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
@@ -213,7 +199,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-       @Override
+    @Override
     public void onRequestPermissionsResult(int requestCode,
                                            String permissions[], int[] grantResults) {
         switch (requestCode) {
@@ -247,47 +233,3 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 }
-
-
-  /*  // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-
-    }
-
-    @Override
-    public void onConnected(@Nullable Bundle bundle) {
-
-    }
-
-    @Override
-    public void onConnectionSuspended(int i) {
-
-    }
-
-    @Override
-    public void onLocationChanged(Location location) {
-
-    }
-
-    @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
-
-    }
-
-    @Override
-    public void onProviderEnabled(String provider) {
-
-    }
-
-    @Override
-    public void onProviderDisabled(String provider) {
-
-    }
-
-    @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
-    }
-}*/

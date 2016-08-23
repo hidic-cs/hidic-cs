@@ -35,7 +35,7 @@ public class HivInfo extends AppCompatActivity {
     }
     public void view (View v)
     {
-        Intent x = new Intent(this, Main2Activity.class);
+        Intent x = new Intent(this, HIVMapActivity.class);
         startActivity(x);
     }
 }

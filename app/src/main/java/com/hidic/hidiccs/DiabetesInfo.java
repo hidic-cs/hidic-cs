@@ -24,7 +24,7 @@ public class DiabetesInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diabetes_info);
 
-        listView = (ListView) findViewById(R.id.diabetes_list);
+        listView = (ListView) findViewById(R.id.diabetes_list_view);
 
         arrayAdapter = new ArrayAdapter<>(getApplicationContext(),
                 R.layout.list_item,
@@ -34,7 +34,7 @@ public class DiabetesInfo extends AppCompatActivity {
     }
     public void view (View v)
     {
-        Intent x = new Intent(this, Main3Activity.class);
+        Intent x = new Intent(this, DiabetesMapActivity.class);
         startActivity(x);
     }
 }
