@@ -1,7 +1,9 @@
 package com.hidic.hidiccs;
-
+//goestohivpage
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -30,5 +32,10 @@ public class HivInfo extends AppCompatActivity {
                 list);
         listView.setAdapter(arrayAdapter);
 
+    }
+    public void view (View v)
+    {
+        Intent x = new Intent(this, Main2Activity.class);
+        startActivity(x);
     }
 }
